@@ -14,6 +14,7 @@
         }
 
         h2 {
+            letter-spacing: 4px;
             color: white;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-style: oblique;
@@ -58,9 +59,10 @@
         }
 
         label,
-        h3 {
+        h3{
             font-size: 19px;
             color: rgb(12, 207, 207);
+            letter-spacing: 4px;
         }
 
         input,
@@ -68,26 +70,40 @@
             padding: 3%;
             margin-bottom: 10%;
             border: 1px solid #ffffff80;
-            border-width: 2px;
             background-color: black;
             color: rgb(12, 207, 207);
+            font-style: oblique;
         }
 
         input::placeholder {
             color: rgb(12, 207, 207);
             font-size: 17px;
         }
-
+        button{
+            letter-spacing: 4px;
+        }
         button:hover {
             cursor: pointer;
+            background-color:  rgb(12, 207, 207);
+            color: black;
+        }
+        p{
+            color: rgb(12, 207, 207);
+        }
+        a{
+            text-decoration: none;
+            color: rgb(12, 207, 207);
+            text-align: right;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
         }
 
         @media screen and (max-width: 720px) {
             .login {
                 display: grid;
                 place-items: center;
-                width: 100%;
                 margin: 0 auto;
+                width: 95%;
             }
 
             hr {
@@ -112,12 +128,13 @@
                     <input type="text" id="username">
                     <label for="password">Password :</label>
                     <input type="password" id="password">
+                    <a href="">Forgot Password?</a>
                     <button type="submit">Querry</button>
+                    <p>Don't have an account? <a href="">Signup!</a></p>
                 </form>
             </div>
         </div>
     </div>
 </body>
-
 
 </html>
