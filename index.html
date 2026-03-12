@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIAL</title>
+    <style>
+        body {
+            background-image: url('logo4.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h2 {
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: oblique;
+            font-size: 40px;
+        }
+
+        .container {
+            display: grid;
+            height: 86vh;
+            place-items: center;
+        }
+
+        .login {
+            display: flex;
+            border-radius: 10px;
+            background-color: #14072B80;
+            border: 1px solid #ffffff20;
+            width: 750px;
+
+        }
+
+        .inputs {
+            display: grid;
+        }
+
+        .logo,
+        .inputs {
+            margin: 4%;
+        }
+
+        img {
+            width: 250px;
+            border: 1px solid #ffffff40;
+            border-radius: 50%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 300px;
+        }
+
+        label,
+        h3 {
+            font-size: 19px;
+            color: rgb(12, 207, 207);
+        }
+
+        input,
+        button {
+            padding: 3%;
+            margin-bottom: 10%;
+            border: 1px solid #ffffff80;
+            border-width: 2px;
+            background-color: black;
+            color: rgb(12, 207, 207);
+        }
+
+        input::placeholder {
+            color: rgb(12, 207, 207);
+            font-size: 17px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 720px) {
+            .login {
+                display: grid;
+                place-items: center;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            hr {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Continental</h2>
+    <div class="container">
+        <div class="login">
+            <div class="logo">
+                <h3>Login</h3>
+                <img src="logo1.jpg" alt="logo_here">
+            </div>
+            <hr>
+            <div class="inputs">
+                <form>
+                    <label for="username">Username :</label>
+                    <input type="text" id="username">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password">
+                    <button type="submit">Querry</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
